@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tài Khoản</title>
+    <link rel="stylesheet" href="dangky.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="first-name">Họ *</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Nhập họ" required>
+            </div>
+            <div class="input-group">
+                <label for="last-name">Tên *</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Nhập tên" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Mật khẩu *</label>
+                <input type="password" id="password" name="password" placeholder="Nhập mật khẩu" required>
+                <span class="show-password" onclick="togglePassword()">👁️</span>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Nhập lại mật khẩu *</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Nhập lại mật khẩu" required>
+                <span class="show-password" onclick="togglePassword()">👁️</span>
+            </div>
+            <div class="input-group">
+                <label for="phone">Số điện thoại *</label>
+                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+            </div>
+            <div class="input-group">
+                <label for="address">Địa chỉ *</label>
+                <input type="text" id="address" name="address" placeholder="Nhập địa chỉ" required>
+            </div>
+            <div class="agreement">
+                <label>
+                    <input type="checkbox" name="newsletter">
+                    Nhận thông báo tin tức mới từ chúng tôi
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="terms">
+                    Đồng ý với các điều khoản và điều kiện của chúng tôi
+                </label>
+            </div>
+            
+            <button type="submit" class="register-btn">Đăng ký</button>
+        </form>
+    </div>
+
+    <script src="dangky.js"></script>
+</body>
+</html>
